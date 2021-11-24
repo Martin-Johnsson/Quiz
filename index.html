@@ -7,58 +7,90 @@
     <title>Inlämningsuppgift 3</title>
   </head>
   <body>
-    <h1>Inlämingsuppgift 3</h1>
-    <button id="darkMode">Darkmode</button>
-    <button id="lightMode">Light mode!</button>
+    <h1>Inlämningsuppgift 3</h1>
+    <button id="switchColorThemeBtn">Darkmode</button>
     <div id="firstQuestionDiv">
-      <legend for="questionOne">Fråga 1</legend>
-      <span>Är kebab gott?</span>
-      <input type="radio" name="questionAlt1" id="question1Alt1" value="true" />
+      <legend for="firstQuestionDiv">Fråga 1: Är kebab gott?</legend>
+      <input type="radio" name="question1" id="question1Alt1" value="true" />
       <label for="questionAlt1">Sant</label>
-      <input
-        type="radio"
-        name="questionAlt2"
-        id="question1Alt2"
-        value="false"
-      />
+      <input type="radio" name="question1" id="question1Alt2" value="false" />
       <label for="questionAlt2">Falskt</label>
     </div>
     <div id="questionTwoDiv">
-      <legend for="questionTwo">Fråga 2</legend>
-      <span>Är kebab äckligt?</span>
-      <input
-        type="radio"
-        name="question2Alt1"
-        id="question2Alt1"
-        value="true"
-      />
+      <legend for="questionTwo">Fråga 2: Är kebab äckligt?</legend>
+      <input type="radio" name="question2" id="question2Alt1" value="false" />
       <label for="question2Alt1">Sant</label>
-      <input
-        type="radio"
-        name="question3Alt1"
-        id="question2Alt1"
-        value="false"
-      />
+      <input type="radio" name="question2" id="question2Alt2" value="true" />
       <label for="question2Alt2">Falskt</label>
     </div>
     <div id="questionThreeDiv">
-      <legend for="questionThree"></legend>
-      <span>Är ris gott?</span>
-      <input
-        type="radio"
-        name="question3Alt1"
-        id="question3Alt1"
-        value="true"
-      />
+      <legend for="questionThree">Fråga 3: Är ris gott?</legend>
+      <input type="radio" name="question3" id="question3Alt1" value="true" />
       <label for="question3Alt1">Sant</label>
-      <input
-        type="radio"
-        name="question3Alt2"
-        id="question3Alt2"
-        value="false"
-      />
+      <input type="radio" name="question3" id="question3Alt2" value="false" />
       <label for="question3Alt2">Falskt</label>
     </div>
+    <div id="question4Div">
+      <!--Testa ifall det funkar att skriva med en 4a eller det måste skrivas med bokstäver.-->
+      <legend for="question4">Fråga 4:</legend>
+      <input type="radio" name="question4" id="question4Alt1" value="false" />
+      <label for="question4Alt1">Alternativ 1</label>
+      <input type="radio" name="question4" id="question4Alt2" value="true" />
+      <label for="question4Alt2">Alternativ 2</label>
+      <input type="radio" name="question4" id="question4Alt3" value="false" />
+      <label for="question4Alt3">Alternativ 3</label>
+    </div>
+    <div id="question5Div">
+      <legend for="question5">Fråga 5:</legend>
+      <input type="radio" name="question5" id="question5Alt1" value="false" />
+      <label for="question5Alt1">Alternativ 1</label>
+      <input type="radio" name="question5" id="question5Alt2" value="false" />
+      <label for="question5Alt2">Alternativ 2</label>
+      <input type="radio" name="question5" id="question5Alt3" value="true" />
+      <label for="question5Alt3">Alternativ 3</label>
+    </div>
+    <div id="question6Div">
+      <legend for="question6">Fråga 6:</legend>
+      <input type="radio" name="question6" id="question6Alt1" value="false" />
+      <label for="question6Alt1">Alternativ 1</label>
+      <input
+        type="radio"
+        name="question6Alt2"
+        id="question6Alt2"
+        value="true"
+      />
+      <label for="question6Alt2">Alternativ 2</label>
+      <input
+        type="radio"
+        name="question6Alt3"
+        id="question6Alt3"
+        value="false"
+      />
+      <label for="question6Alt3">Alternativ 3</label>
+    </div>
+    <div id="question7Div">
+      <span>Fråga 7</span>
+      <input type="checkbox" name="question7" id="question7Alt1" value="true" />
+      <label for="question7Alt1">Påstående 1</label>
+      <input type="checkbox" name="question7" id="question7Alt2" value="true" />
+      <label for="question7Alt1">Påstående 2</label>
+      <input
+        type="checkbox"
+        name="question7"
+        id="question7Alt3"
+        value="false"
+      />
+      <label for="question7Alt1">Påstående 3</label>
+      <input
+        type="checkbox"
+        name="question7"
+        id="question7Alt4"
+        value="false"
+      />
+      <label for="question7Alt1">Påstående 4</label>
+    </div>
+    <div id="resultDiv"></div>
+    <button id="submitScoreBtn">Get results!</button>
     <script src="main.js"></script>
   </body>
 </html>
