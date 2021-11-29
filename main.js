@@ -32,8 +32,10 @@ submitScoreBtn.addEventListener("click", () => {
     score++;
   }
   if (
-    document.getElementById("question7Alt1").checked &&
-    document.getElementById("question7Alt2").checked
+    document.getElementById("question7Alt1").checked === true &&
+    document.getElementById("question7Alt2").checked === true &&
+    document.getElementById("question7Alt3").checked === false &&
+    document.getElementById("question7Alt4").checked === false
   ) {
     score++;
   }
@@ -41,7 +43,7 @@ submitScoreBtn.addEventListener("click", () => {
   finalResult.textContent = `Du har svarat rätt på ${score} av 7 frågor!`;
   resultDiv.appendChild(finalResult);
   if (score === 7) {
-    finalResult.style.color = "darkgreen";
+    finalResult.style.color = "green";
   } else if (score > 4) {
     finalResult.style.color = "orange";
   } else {
