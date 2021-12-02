@@ -7,10 +7,10 @@ switchColorThemeBtn.addEventListener("click", () => {
   } else {
     document.body.style.background = "white";
     document.body.style.color = "black";
+    switchColorThemeBtn.innerHTML = `Dark Mode`;
   }
 });
 let score = 0;
-//Submita poängen
 submitScoreBtn.addEventListener("click", () => {
   let score = 0;
   if (document.getElementById("question1Alt1").checked) {
@@ -51,8 +51,3 @@ submitScoreBtn.addEventListener("click", () => {
   }
   submitScoreBtn.remove();
 });
-// Question  - sant eller falskt 3x
-
-// Question - tre svarsalternativ 3x
-
-//Question - 1 fråga med minst 4 checkboxar
