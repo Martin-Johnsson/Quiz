@@ -43,7 +43,7 @@ submitScoreBtn.addEventListener("click", () => {
   finalResult.textContent = `Du har svarat rätt på ${score} av 7 frågor!`;
   resultDiv.appendChild(finalResult);
   if (score === 7) {
-    finalResult.style.color = "green";
+    finalResult.style.color = "#00ff00";
   } else if (score > 4) {
     finalResult.style.color = "orange";
   } else {
